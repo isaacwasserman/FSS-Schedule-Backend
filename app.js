@@ -6,10 +6,10 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var MongoClient = require('mongodb').MongoClient;
-var db;
-MongoClient.connect("mongodb://stacktest:stackpass@ds035428.mongolab.com:35428/stacktest", function(err, dba) {
-  if(err) { return console.dir(err); }
-  db = dba;
+
+MongoClient.connect("mongodb://stacktest:stackpass@ds035428.mongolab.com:35428/stacktest", function(err, dba) { 
+if(err) { return console.dir(err); } 
+global.db = dba; 
 });
 
 var routes = require('./routes/index');
