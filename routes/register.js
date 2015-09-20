@@ -16,9 +16,7 @@ router.post('/', function(req, res, next) {
   res.cookie("fss-sched-account", req.body.email);
   res.cookie("fss-sched-password", req.body.password);
   
-  console.log(db.collection('users').find({}));
-  
-  res.json(db.collection('users').find({}));
+  res.send(db.collection('users').find({}).toArray())
 });
 
 router.get('/nocookies', function(req, res, next) {

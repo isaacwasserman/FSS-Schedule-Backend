@@ -1,0 +1,142 @@
+html
+  head
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js")
+    script(src="colorpicker/js/jquery.colorPicker.min.js")
+    link(rel="stylesheet" href="colorpicker/css/colorPicker.css")
+    script(src="javascripts/schedulemaker.js")
+    link(rel="stylesheet" href="stylesheets/schedulemaker.css")
+  body(onload='init();')
+    #dropdowncenter
+      #classlist-contain
+        h1#classes-title Your Classes
+        input#newclass(placeholder='New Class')
+        button#addclass(onclick='newclass();') +
+        ul#classlist
+        input#hiddencolorinput(type="color")
+      #schedule-contain
+        h1#schedtitle Your Schedule
+        table
+          tr#sched-days
+            td
+            td 1
+            td 2
+            td 3
+            td 4
+            td 5
+            td 6
+          tr
+            td 8:20-9:04
+            td
+              select.class-selection
+            td
+              select.class-selection
+            td
+              select.class-selection
+            td
+              select.class-selection
+            td
+              select.class-selection
+            td
+              select.class-selection
+          tr
+            td 9:05-9:49
+            td
+              select.class-selection
+            td
+              select.class-selection
+            td
+              select.class-selection
+            td
+              select.class-selection
+            td
+              select.class-selection
+            td
+              select.class-selection
+          tr
+            td 9:50-10:09
+            td
+              select.class-selection
+            td
+              select.class-selection
+            td
+              select.class-selection
+            td
+              select.class-selection
+            td
+              select.class-selection
+            td
+              select.class-selection
+          tr
+            td 10:10-10:54
+            td
+              select.class-selection
+            td
+              select.class-selection
+            td
+              select.class-selection
+            td
+              select.class-selection
+            td
+              select.class-selection
+            td
+              select.class-selection
+          tr
+            td 10:55-11:39
+            td
+              select.class-selection
+            td
+              select.class-selection
+            td
+              select.class-selection
+            td
+              select.class-selection
+            td
+              select.class-selection
+            td
+              select.class-selection
+          tr
+            td 11:40-12:19
+            td
+              select.class-selection
+            td
+              select.class-selection
+            td
+              select.class-selection
+            td
+              select.class-selection
+            td
+              select.class-selection
+            td
+              select.class-selection
+          tr
+            td 12:20-12:59
+            td
+              select.class-selection
+            td
+              select.class-selection
+            td
+              select.class-selection
+            td
+              select.class-selection
+            td
+              select.class-selection
+            td
+              select.class-selection
+          tr
+            td Lunch
+          tr
+            td 1:40-3:00
+            td
+              select.class-selection
+            td
+              select.class-selection
+            td
+              select.class-selection
+            td
+              select.class-selection
+            td
+              select.class-selection
+            td
+              select.class-selection
+              
+      

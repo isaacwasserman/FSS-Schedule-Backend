@@ -16,9 +16,17 @@ var routes = require('./routes/index');
 var users = require('./routes/users');
 var main = require('./routes/preferences');
 var register = require('./routes/register');
+var schedulemaker = require('./routes/schedulemaker');
+var forme = require('./routes/forme');
 
 
 var app = express();
+
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -36,6 +44,8 @@ app.use('/day', routes);
 app.use('/', main);
 app.use('/register', register)
 app.use('/users', users);
+app.use('/schedulemaker', schedulemaker);
+app.use('/forme', forme);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
